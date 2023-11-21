@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -25,6 +26,7 @@ flutter:
     - assets/images_Main/Evaluar.jpg
     - assets/images_Main/Lugares.jpg
     - assets/images_Main/Avisos.jpg
+    - assets/images_Main/WS.png
   # Lugares
     - assets/images_Lugares/Bolivia.png
     - assets/images_Lugares/Holanda.png

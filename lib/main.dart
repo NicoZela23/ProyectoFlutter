@@ -3,6 +3,7 @@ import 'Lugares/lugares_screen.dart';
 import 'Aprender/aprender_screen.dart';
 import 'Avisos/avisos.screen.dart';
 import 'Evaluar/evaluar_screen.dart';
+import 'WS/recovery_page.dart';
 //import 'package:flutter_application_1/modules/operaciones/PruebaPage.dart';
 
 void main() {
@@ -88,6 +89,21 @@ class BeginPageState extends State<BeginPage> {
                       onTap: () {
                         Navigator.push(
                           context,MaterialPageRoute(builder: (context) => AvisosScreen()),
+                          );
+                      }),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  _createButtonItem(
+                      imagen: 'assets/images_Main/WS.png',
+                      text: 'Servicio Web',
+                      splashColor: const Color.fromARGB(255, 244, 238, 54), 
+                      onTap: () {
+                          Navigator.push(
+                          context,MaterialPageRoute(builder: (context) => RecoveryPage()),
                           );
                       }),
                 ],
